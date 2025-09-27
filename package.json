@@ -1,0 +1,22 @@
+{
+  "name": "oidc-nest-react",
+  "private": true,
+  "workspaces": [
+    "api",
+    "spa"
+  ],
+  "engines": {
+    "node": ">=20.10.0"
+  },
+  "scripts": {
+    "dev:api": "npm --workspace api run start:dev",
+    "dev:spa": "npm --workspace spa run dev",
+    "build": "npm -w api run build && npm -w spa run build",
+    "test": "npm -w api test",
+    "lint": "npm -w api run lint && npm -w spa run lint",
+    "format": "npm -w api run format && npm -w spa run format"
+  },
+  "dependencies": {
+    "react-router-dom": "^6.30.1"
+  }
+}

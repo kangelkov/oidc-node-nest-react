@@ -1,0 +1,11 @@
+node_modules
+dist
+.env
+*.log
+/api/node_modules
+/api/dist
+/api/data/*.sqlite
+/api/coverage
+/spa/node_modules
+/spa/dist
+.idea
